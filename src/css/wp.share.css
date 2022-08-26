@@ -1,0 +1,71 @@
+#wp-share-block{
+    position: fixed;
+    bottom:30px;
+    left:15px;
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    z-index:10002;
+}
+
+#wp-share-block a{
+    color:inherit;
+}
+
+#wp-share-mobile{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:60px;
+    height:60px;
+    /* background:#fffa; */
+    /* border:1px solid white; */
+    border-radius:50%;
+    margin:4px 0;
+    cursor:pointer;
+    z-index:10004;
+}
+
+#wp-share-mobile-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #000a;
+    border-radius: 10px;
+    color: #00c73b;
+}
+
+#wp-share-mobile-icon i{
+    font-size:21px;
+}
+
+#wp-share-btns{
+    position:relative;
+    z-index:10003;
+}
+
+.wp-share-btn{
+    position:absolute;
+    top:0px;
+    left:-25px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:50px;
+    height:50px;
+    margin:3px 0;
+    border-radius:8px;
+    font-size:32px;
+    transform:scale(0);
+    transition:all .3s;
+    background: #000a;
+}
+
+#wp-share-btns.visible .wp-share-btn{
+    transform:scale(1);
+    top:initial;
+}
